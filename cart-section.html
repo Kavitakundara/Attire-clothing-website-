@@ -1,0 +1,391 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+  <title>Cart | ATTIRE | Shopping Cart</title>
+
+</head>
+
+<body>
+
+  <!-- Optional JavaScript; choose one of the two! -->
+  <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+
+  <!-- Option 1: Bootstrap Bundle with Popper -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+    crossorigin="anonymous"></script>
+
+  <!-- Option 2: Separate Popper and Bootstrap JS -->
+  <!--
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.min.js" integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF" crossorigin="anonymous"></script>
+    -->
+
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" rel="stylesheet" />
+  <link href="../pr/css/ext.css" rel="stylesheet"/>
+  </head>
+  <body>
+        <header>
+            <div class="head">
+        <button class="menu-btn">
+        <a href="#" class="dots">
+            <div class="dot"></div>
+          </a>
+        </button>
+              <div class="logo">
+                  <img src="../pr/images/logo.png" alt="logo">
+              </div>
+             
+            <div class="nav-links">
+              <div class="nav-class">
+                <nav>
+                  <ul>
+                    <li><a href="../pr/index.html">NEW IN</a></li>
+                    <li><a href="javascript:void(0)">ALL CLOTHING</a> </li>
+                    <li><a href="../pr/Ethnicwear.html">SHOP</a></li>
+                    <li><a href="../pr/collection.html">COLLECTION</a></li>
+                    <li><a href="../pr/contact.html">CONTACT US</a></li>
+      
+                  </ul>
+                </nav>
+              </div>
+            </div>
+            <div class="icon">
+              <ul>
+            <li><a href="javascript:void(0)" class="login-page">Login</a></li>
+            <li><a href="javascript:void(0)" class="sign-page">Sign Up</a></li>
+            <a href="javascript:void(0)"><i class="fa-solid fa-heart"></i></a>
+            <a href="../pr/cart-section.html"><i class="fa-solid fa-bag-shopping"></i></a>
+          </ul>
+              </div>
+            </div>
+</div>
+</header>
+<div class="top">
+    <a href="#">HOME / CART</a>
+    </div>
+    <!--Your-cart-->
+    <div class="cart-section">
+      <div class="width-manage-left-carts">
+        <div class="cart-heading-sectio">
+          <h2>MY CART</h2>
+          <div class="remove-add">
+            <button type="submit" class="buttons">Move all to wish List</button>
+            <button type="submit" class="buttons">Remove all items</button>
+          </div>
+        </div>
+  
+        <div class="choose-items">
+          <div class="product-image">
+          <div class="img-section">
+            <img src="../pr/images/02-720x720.jpg" alt="yellow-men-pintshirt">
+  
+            <div class="counting">
+              <button id="plus">+</button>
+              <input type="number" id="num" value="1"></input>
+              <button id="minus">-</button>
+            </div>
+          </div>
+        </div>
+          <div class="product-details">
+            <p>Single One Pice short Frok at ATTIRE.com </p>
+            <h3>Amount $<span id="pr">3</span>
+            </h3>
+          </div>
+        </div>
+        <div class="choose-items">
+          <div class="product-image">
+          <div class="img-section">
+            <img src="../pr/images/gallery-01-1170x780.jpg" alt="Rostro-men-shirts">
+  
+            <div class="counting">
+              <button id="plus2">+</button>
+              <input type="number" id="num2" value="1"></input>
+              <button id="minus2">-</button>
+            </div>
+          </div>
+        </div>
+          <div class="product-details">
+            <p>Red short with Pinky light crop shirt at ATTIRE.com </p>
+            <h3>Amount $<span id="pr2">3</span>
+            </h3>
+          </div>
+        </div>
+      </div>
+      <div class="shipping-tax">
+        <div class="shipping-tax-wrap">
+          <h2>ESTIMATE SHIPPING & TAX</h2>
+          <input type="checkbox" id="check-input" name="check"> NYC Super Store Pickup <a href="javascript:void(0)">See
+            Details</a>
+          <select name="country-selection" id="country">
+            <option value="">--Plese choose Country--</option>
+            <option value="United State">United State</option>
+            <option value="India">India</option>
+            <option value="New Zealand">New Zealand</option>
+            <option value="China">China</option>
+            <option value="Japan">Japan</option>
+          </select>
+          <hr>
+
+          <div class="wpr-sub-total">
+
+            <div class="row-total">
+                <h3>Subtotal:</h3>
+                <h3>Amount $<span id="last-amount">3</spna></h3>
+            </div>
+            <div class="row-total">
+                <p>shipping :</p>
+                <p>Calculated Above</p>
+            </div>
+            <div class="row-total">
+                <p>Sales & Tax :</p>
+                <p>Calculated Above</p>
+            </div>
+        </div>
+        </div>
+        <button type="submit" class="Check-out"><a href="../pr/checkout.html">Begin Checkout</a> </button>
+      </div>
+    </div>
+    
+      <!-- common-section -->
+      <div class="container">
+         <div class="row manage-common-img">
+           <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-24.jpg" alt="">
+           </div>
+           <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-16.jpg" alt="">             
+             </div>
+             <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-19c.jpg" alt="">            
+             </div>
+             <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-9.jpg" alt="">            
+             </div>
+             <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-14.jpg" alt="">            
+             </div>
+             <div class="col-lg-2 col-4">
+             <img src="../pr/images/h3-list-img-13.jpg" alt="">            
+             </div>
+         </div>
+       </div>
+       <!-- contact-acounr -->
+    <div class="insta">
+      <h2>Follow Our Instagram</h2>
+      <a href="javascript:void(0)">@attire.com</a>
+    </div>
+
+      <!--footer-part-->
+      <div class="footer">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-lg-2 footer-heading">
+                  <ul>
+                  <li><h2>SIGN UP NOW & GET 10% OFF</h2></li>
+                  <li><P>Get timely updates from your favorite products</P></li>
+                 <li><input type="text" name="email" id ="emailnm"placeholder="Email Address*"><button type="submit" id="emailbtn">SUBMIT</button></li>
+                </ul>
+          </div>
+          <div class="col-lg-2 footer-heading">
+                
+                  <ul>
+                  <li><h2>CONTACT INFO</h2></li>
+                   <li><p>Phone: 888-999-000-1425</p></li>
+                   <li><a href="javascript:void(0)">Email: attire@mail.com</a></li>
+                   <li><p> Address: 22/1 capital city, New Delhi, India </p></li>
+                  </ul>
+          </div>
+          <div class="col-lg-2 footer-heading">
+
+              <ul>
+              <li><h2>COMPANY</h2></li>         
+                <li><a href="javascript:void(0)">About us</a></li>
+                <li><a href="javascript:void(0)">Best services</a></li>
+                <li><a href="javascript:void(0)">Recent insight</a></li>
+                <li><a href="javascript:void(0)">Shipping guid</a></li>
+                <li><a href="javascript:void(0)">Privacy policy</a></li>
+                <li><a href="javascript:void(0)">Shoes</a></li>
+</ul>
+          </div>
+          <div class="col-lg-2 footer-heading">
+
+            <ul>
+            <li><h2>PAYMENT & SHIPPING</h2>   </li>
+                <li><a href="javascript:void(0)">Payment method</a></li>
+                <li><a href="javascript:void(0)">Tearms of use</a></li>
+                <li><a href="javascript:void(0)">Indian WearWomen</a></li>
+                <li><a href="javascript:void(0)">Shipping policy</a></li>
+                <li><a href="javascript:void(0)">Shipping guide</a></li>
+                <li><a href="javascript:void(0)">Accessories</a></li>
+                <li><a href="javascript:void(0)">Return policy</a></li>
+              </ul>
+            </ul>
+
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--footer-bottom-->
+    <div class="bottom-part">
+      <div class="container">
+        <div class="col-lg-12">
+          <a href="javascript:void(0)"><i class="fa-brands fa-facebook-f"></i></a>
+          <a href="javascript:void(0)"><i class="fa-brands fa-instagram-square"></i></a>
+          <a href="javascript:void(0)"><i class="fa-brands fa-twitter"></i></a>
+          <a href="javascript:void(0)"><i class="fa-solid fa-envelope"></i></a>
+        </div>
+      </div>
+    </div>
+    </div>
+
+     
+    <!-- sing-up -->
+    <div class="overlay-with-sign-popup">
+      <div class="wrp-sign-popup">
+        <div class="sign">
+          <h1>Sign-up</h1>
+         <form action="" method="GET">
+          <div class="info">
+            <input type="text" name="Username" id="email" placeholder="UserName" class="input-info"  required >
+            <input type="password" name="password" id="pass" placeholder="Password" class="input-info" required >
+            <input type="password" name="cnpassword" id="cnpass" placeholder="confirmPassword" class="input-info" required ><p id="errors"></p>
+            <p>By creating account you are agree to our <a href="javascript:void(0)">Terms & Condition</a></p>
+            
+            
+            <div class="agreee">
+              <p>Login with Email <a href="javascript:void(0)">Click here</a></p>
+              <button type="submit" id="Agree-btn" onclick="checkP()" name="btn" value="submit">CONTINUE</button>
+            </div>
+            </form>
+     
+        <div class="overlay-popup"></div>
+
+            <?php
+
+                   $con= mysqli_connect ("localhost", "root","", "attire");
+                if($con)
+              {
+                  echo "";
+              }else{
+                  echo "Not Connected";
+              }
+              
+              if($_GET["btn"])
+              {
+               $email= $_GET['Username']; 
+               $password= $_GET['password'];
+               $cnpassword= $_GET['cnpassword'];
+
+               if($email !="" && $password !="" && $cnpassword !="")
+           
+                 $query= "INSERT into userdata value ('$email', '$password' , '$cnpassword')";
+                 $data= mysqli_query($con, $query);
+             if($data){
+                 echo "";
+             }
+           else{
+                 "All fields are required";
+            }
+           }         
+           ?>
+          </div>
+        </div>
+      </div>
+    </div>
+    
+<!-- login-page-->
+    <div class="overlay-with-login-popup">
+    <div class="login-wrp">
+      <div class="login">
+          <h1>Login to your acccount</h1>
+         <form action="" method="POST">
+          <div class="info">
+            <input type="text" name="Username" id="check-email" placeholder="UserName" class="input-info"  required >
+            <input type="password" name="password" id="check-pass" placeholder="Password" class="input-info" required >
+            <button  type="submit" id="login-btn" name="btn2" value="submit">CONTINUE</button>
+            <a href="javascript:void(0)" id="forget-password">Forget Password?</a>
+
+            </form>
+        <div class="overlay-login-popup"></div>
+
+              </div>
+       </div>  
+     </div>
+  </div>
+         
+    <script src="../pr/js/attire-js.js"></script>
+   <script>
+
+     // cart-section
+const pl = document.getElementById("plus");
+const pl2 = document.getElementById("plus2");
+const mi = document.getElementById("minus");
+const mi2 = document.getElementById("minus2");
+const pri = document.getElementById("pr").innerHTML;
+const price2 = document.getElementById("pr2").innerHTML;
+const last = document.getElementById("last-amount").innerHTML;
+let values;
+
+
+function totalAmt(){
+  let tmt = pri+price2;
+  document.getElementById("last-amount").innerHTML = tmt;
+}
+function amount() {
+  let amount = values * price2;
+  document.getElementById("pr").innerHTML = amount;
+}
+function amount2() {
+  let amount2 = values*price2;
+  document.getElementById("pr2").innerHTML = amount2;
+
+}
+  function lm(){
+   let lastamt =  values*last;
+   document.getElementById("last-amount").innerHTML=lastamt;
+   totalAmt();
+  }
+pl.addEventListener("click", function () {
+  values = document.getElementById("num").value;
+  values++;
+  document.getElementById("num").value = values;
+  amount();
+  lm();
+})
+pl2.addEventListener("click", function () {
+  values = document.getElementById("num2").value;
+  values++;
+  document.getElementById("num2").value = values;
+  amount2()
+  lm();
+})
+mi.addEventListener("click", function () {
+  values = document.getElementById("num").value;
+  if (values > 1) {
+    values--;
+    document.getElementById("num").value = values;
+    amount();
+    lm();
+  }
+})
+mi2.addEventListener("click", function () {
+  values = document.getElementById("num2").value;
+  if (values > 1) {
+    values--;
+    document.getElementById("num2").value = values;
+    amount2()
+    lm();
+  }
+})
+   </script>
+  </body>
+</html>
